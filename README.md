@@ -2,7 +2,7 @@ TUTORIAL BÁSICO Conectando um projeto Angular ao Firebase Hosting
 
 Este tutorial mostra como conectar um projeto Angular existente no VS Code a um projeto já criado no Firebase e publicá-lo usando Firebase Hosting.
 
-##1. PRÉ-REQUISITOS
+## 1. PRÉ-REQUISITOS
 Você precisa ter:
 -   Node.js instalado
 -   npm instalado
@@ -17,7 +17,7 @@ Projeto Firebase: shadow-angular
 
 ---
 
-##2. INSTALAR O FIREBASE CLI
+## 2. INSTALAR O FIREBASE CLI
 
 Abra o terminal do VS Code e execute:
 npm install -g firebase-tools
@@ -28,7 +28,7 @@ Exemplo:
 
 ---
 
-##3. FAZER LOGIN NO FIREBASE
+## 3. FAZER LOGIN NO FIREBASE
 
 Execute:
 firebase login
@@ -40,7 +40,7 @@ Project Display Name Project ID shadow-angular shadow-angular
 
 ---
 
-##4. ENTRAR NA PASTA DO PROJETO ANGULAR
+## 4. ENTRAR NA PASTA DO PROJETO ANGULAR
 
 No terminal:
 ```
@@ -50,7 +50,7 @@ cd C:-Flip-Angular
 ```
 ---
 
-##5. ASSOCIAR O PROJETO ANGULAR AO FIREBASE
+## 5. ASSOCIAR O PROJETO ANGULAR AO FIREBASE
 
 Execute:
 firebase use –add
@@ -69,7 +69,7 @@ O projeto deverá aparecer como projeto ativo.
 
 ---
 
-##6. CONFIGURAR O FIREBASE HOSTING
+## 6. CONFIGURAR O FIREBASE HOSTING
 
 Execute:
 firebase init
@@ -78,7 +78,7 @@ Hosting: Set up deployments for static web apps. Use a tecla Space para selecion
 
 ---
 
-##7. GERAR O BUILD DO ANGULAR
+## 7. GERAR O BUILD DO ANGULAR
 
 Execute:
 ```
@@ -95,7 +95,7 @@ main-XXXXXXXX.js ├── styles-XXXXXXXX.css └── …
 ```
 ---
 
-##8. VERIFICAR ONDE ESTÁ O index.html
+## 8. VERIFICAR ONDE ESTÁ O index.html
 
 No PowerShell, execute:
 Get-ChildItem .-Filter index.html -Recurse | Select-Object FullName
@@ -106,7 +106,7 @@ publicar exatamente a pasta que contém o index.html.
 
 ---
 
-##9. CONFIGURAR O : firebase.json
+## 9. CONFIGURAR O : firebase.json
 
 O arquivo firebase.json deve apontar para a pasta que contém o index.html.
 Exemplo para o projeto Shadow-Flip-Angular:
@@ -125,7 +125,7 @@ use:
 
 ---
 
-##10. POR QUE USAR REWRITES?
+## 10. POR QUE USAR REWRITES?
 
 Para aplicações Angular que utilizam rotas, o Firebase precisa encaminhar as URLs para o index.html para que o Angular Router possa assumir o controle.
 Exemplo:
@@ -136,7 +136,7 @@ faz com que as rotas da aplicação sejam entregues ao Angular.
 
 ---
 
-##11. FAZER O DEPLOY
+## 11. FAZER O DEPLOY
 
 Depois de gerar o build e configurar o firebase.json:
 firebase deploy –only hosting
@@ -147,7 +147,7 @@ Abra a Hosting URL no navegador para acessar a aplicação publicada.
 
 ---
 
-##12. FLUXO PARA OS PRÓXIMOS DEPLOYS
+## 12. FLUXO PARA OS PRÓXIMOS DEPLOYS
 
 Depois que a configuração estiver pronta, sempre que fizer alterações no
 Angular:
@@ -162,7 +162,7 @@ Esse comando publica todos os recursos Firebase configurados no projeto.
 
 ---
 
-##13. ESTRUTURA BÁSICA DO PROJETO
+## 13. ESTRUTURA BÁSICA DO PROJETO
 
 Shadow-Flip-Angular/ │ ├── dist/ │ └── shadow-flip-angular/ │ └──
 browser/ │ ├── index.html │ ├── main-XXXXXXXX.js │ └──
@@ -172,7 +172,7 @@ angular.json ├── package.json └── tsconfig.json
 
 ---
 
-##14. RESUMO RÁPIDO
+## 14. RESUMO RÁPIDO
 
 Se o projeto Firebase já estiver criado:
 1.  Instalar o Firebase CLI:
@@ -196,7 +196,7 @@ firebase deploy –only hosting
 
 ---
 
-##REGRA MAIS IMPORTANTE
+## REGRA MAIS IMPORTANTE
 
 O valor de “public” no firebase.json deve apontar para a pasta que realmente contém o index.html gerado pelo build do Angular.
 Exemplo:
