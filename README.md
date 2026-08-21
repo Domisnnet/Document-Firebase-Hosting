@@ -1,8 +1,3 @@
-Perfeito. Agora tenho o conteúdo completo. Abaixo está o **mesmo README integral**, padronizado em **Markdown**, com badges consistentes, tabela premium em três colunas e links internos corrigidos com âncoras explícitas.
-
-```markdown
-<a id="topo"></a>
-
 # 📘 Deploy de Angular no Firebase Hosting
 
 ![Documentação](https://img.shields.io/badge/Documentação-Técnica-1A73E8?style=for-the-badge&logo=markdown&logoColor=white)
@@ -975,4 +970,8 @@ Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou
 
 ---
 
-[![Voltar ao topo](https://img.shields.io/badge/⬆️%20Voltar%20ao%20topo-1A73E8?style=for-the-badge)](#topo)
+<p align="center">
+
+<a href="#topo">
+  <img src="https://img.shields.io/badge/⬆️%20Voltar%20ao%20topo-1A73E8?style=for-the-badge" alt="Voltar ao topo">
+</a>
