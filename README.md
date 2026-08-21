@@ -2,7 +2,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/Domisnnet/Shadow-Flip-Angular?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Domisnnet/Shadow-Flip-Angular?style=for-the-badge)
 
-<h2 id="sobre-o-projeto">1. 🚀 Deploy de Angular 20 no Firebase Hosting 🚀</h2>
+<h2 id="deploy-angular-firebase-hosting">1. 🚀 Deploy de Angular 20 no Firebase Hosting 🚀</h2>
 
 ![Status](https://img.shields.io/badge/Status-Documentação-4CAF50?style=flat-square)
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=flat-square\&logo=angular\&logoColor=white)
@@ -20,15 +20,15 @@
 
 ## 📚 Tabela de Conteúdo
 
-| 🚀 Guia | 🛠️ Técnico | 📚 Referência |
+| 🚀 Guia | 🛠️ Técnico | 🤝 Comunidade |
 | :---: | :---: | :---: |
-| [![1. Deploy](https://img.shields.io/badge/1%20-%20Deploy-4CAF50)](#1--deploy-de-angular-20-no-firebase-hosting) | [![7. Deploy](https://img.shields.io/badge/7%20-%20Deploy-009688)](#fazer-o-deploy) | [![13. FAQ](https://img.shields.io/badge/13%20-%20FAQ-FFC107)](#faq) |
-| [![2. Objetivo](https://img.shields.io/badge/2%20-%20Objetivo-2196F3)](#objetivo) | [![8. Próximos Deploys](https://img.shields.io/badge/8%20-%20Próximos%20Deploys-00BCD4)](#proximos-deploys) | [![14. Checklist](https://img.shields.io/badge/14%20-%20Checklist-4CAF50)](#checklist-final) |
-| [![3. Como Funciona](https://img.shields.io/badge/3%20-%20Como%20Funciona-FF9800)](#como-funciona) | [![9. Estrutura](https://img.shields.io/badge/9%20-%20Estrutura-607D8B)](#estrutura-do-projeto) | [![15. Referências](https://img.shields.io/badge/15%20-%20Referências-3F51B5)](#referencias-oficiais) |
-| [![4. Tecnologias](https://img.shields.io/badge/4%20-%20Tecnologias-9C27B0)](#tecnologias-utilizadas) | [![10. Troubleshooting](https://img.shields.io/badge/10%20-%20Troubleshooting-795548)](#troubleshooting) | [![16. Regra Mais Importante](https://img.shields.io/badge/16%20-%20Regra%20Mais%20Importante-F44336)](#regra-mais-importante) |
-| [![5. Exemplo](https://img.shields.io/badge/5%20-%20Exemplo-795548)](#exemplo-utilizado) | [![6. Configuração](https://img.shields.io/badge/6%20-%20Configuração-607D8B)](#configuração-e-deploy) | [![17. Créditos](https://img.shields.io/badge/17%20-%20Créditos-607D8B)](#créditos) |
-| [![11. Boas Práticas](https://img.shields.io/badge/11%20-%20Boas%20Práticas-9C27B0)](#boas-praticas) | [![12. Contribuir](https://img.shields.io/badge/12%20-%20Contribuir-3F51B5)](#como-contribuir) | [![18. Licença](https://img.shields.io/badge/18%20-%20Licença-E91E63)](#licença) [![19. Perfil](https://img.shields.io/badge/19%20-%20Perfil-212121)](#perfil-do-github) |
-
+| [![1. Deploy](https://img.shields.io/badge/1%20-%20Deploy-4CAF50)](#deploy-angular-firebase-hosting) | [![8. Build](https://img.shields.io/badge/8%20-%20Build-607D8B)](#build-e-localizacao-do-indexhtml) | [![15. Boas Práticas](https://img.shields.io/badge/15%20-%20Boas%20Práticas-9C27B0)](#boas-praticas) |
+| [![2. Objetivo](https://img.shields.io/badge/2%20-%20Objetivo-2196F3)](#objetivo) | [![9. Hosting](https://img.shields.io/badge/9%20-%20Hosting-009688)](#configurar-o-firebase-hosting) | [![16. Contribuir](https://img.shields.io/badge/16%20-%20Contribuir-3F51B5)](#contribuindo) |
+| [![3. Como Funciona](https://img.shields.io/badge/3%20-%20Como%20Funciona-FF9800)](#como-funciona) | [![10. Testar](https://img.shields.io/badge/10%20-%20Testar-00BCD4)](#validar-e-testar-localmente) | [![17. FAQ](https://img.shields.io/badge/17%20-%20FAQ-FFC107)](#faq) |
+| [![4. Tecnologias](https://img.shields.io/badge/4%20-%20Tecnologias-9C27B0)](#tecnologias-utilizadas) | [![11. Deploy](https://img.shields.io/badge/11%20-%20Deploy-009688)](#fazer-o-deploy) | [![18. Checklist](https://img.shields.io/badge/18%20-%20Checklist-4CAF50)](#checklist-final) |
+| [![5. Exemplo](https://img.shields.io/badge/5%20-%20Exemplo-795548)](#exemplo-utilizado) | [![12. Próximos Deploys](https://img.shields.io/badge/12%20-%20Próximos%20Deploys-00BCD4)](#proximos-deploys) | [![19. Referências](https://img.shields.io/badge/19%20-%20Referências-3F51B5)](#referencias-oficiais) |
+| [![6. CLI](https://img.shields.io/badge/6%20-%20CLI-607D8B)](#instalar-o-firebase-cli) | [![13. Estrutura](https://img.shields.io/badge/13%20-%20Estrutura-607D8B)](#estrutura-do-projeto) | [![20. Regra Mais Importante](https://img.shields.io/badge/20%20-%20Regra%20Mais%20Importante-F44336)](#regra-mais-importante) |
+| [![7. Firebase](https://img.shields.io/badge/7%20-%20Firebase-FFCA28)](#login-e-associacao-ao-firebase) | [![14. Troubleshooting](https://img.shields.io/badge/14%20-%20Troubleshooting-795548)](#troubleshooting) | [![21. Créditos, Licença e Perfil](https://img.shields.io/badge/21%20-%20Créditos%20%7C%20Licença%20%7C%20Perfil-212121)](#creditos-licenca-e-perfil) |
 
 ---
 
@@ -150,9 +150,7 @@ Substitua-os pelos nomes reais do seu projeto quando necessário.
 
 ---
 
-<h2 id="configuração-e-deploy">6. 📦 Configuração e Deploy</h2>
-
-## ⚙️ Instalar o Firebase CLI
+<h2 id="instalar-o-firebase-cli">6. 📦 Instalar o Firebase CLI</h2>
 
 Abra o terminal integrado do VS Code e execute:
 
@@ -186,7 +184,7 @@ npm prefix -g
 
 ---
 
-## 🔐 Fazer login no Firebase
+<h2 id="login-e-associacao-ao-firebase">7. 🔐 Login e associação ao Firebase</h2>
 
 Execute:
 
@@ -213,7 +211,7 @@ shadow-angular          shadow-angular
 
 ---
 
-## 📂 Entrar na pasta do projeto
+### 📂 Entrar na pasta do projeto
 
 Navegue até a pasta raiz do projeto Angular.
 
@@ -255,7 +253,7 @@ src/
 
 ---
 
-## 🏗️ Gerar o build
+<h2 id="build-e-localizacao-do-indexhtml">8. 🏗️ Build e localização do index.html</h2>
 
 Antes de configurar o diretório público do Hosting, gere o build da aplicação.
 
@@ -295,7 +293,7 @@ dist/shadow-flip-angular/
 
 ---
 
-## 🔎 Localizar o `index.html`
+### 🔎 Localizar o `index.html`
 
 ### PowerShell
 
@@ -339,7 +337,7 @@ A propriedade `public` recebe **a pasta**, não o caminho completo do arquivo.
 
 ---
 
-## 🔗 Associar o projeto ao Firebase
+### 🔗 Associar o projeto ao Firebase
 
 Execute:
 
@@ -385,7 +383,7 @@ Active Project: shadow-angular
 
 ---
 
-## 🔥 Inicializar o Firebase Hosting
+<h2 id="configurar-o-firebase-hosting">9. 🔥 Configurar o Firebase Hosting</h2>
 
 Execute:
 
@@ -421,7 +419,7 @@ Não é necessário selecionar Firestore, Functions, Storage ou outros produtos 
 
 ---
 
-## 🔧 Configurar o `firebase.json`
+### 🔧 Configurar o `firebase.json`
 
 Abra:
 
@@ -503,7 +501,7 @@ utilize:
 
 ---
 
-# 🏗️ Validar o build
+<h2 id="validar-e-testar-localmente">10. 🧪 Validar e testar localmente</h2>
 
 Antes do deploy, confirme novamente que o build foi gerado:
 
@@ -535,7 +533,7 @@ Nesse cenário:
 
 ---
 
-# 🧪 Testar localmente
+### 🧪 Testar localmente
 
 Antes do deploy, você pode testar o Hosting localmente.
 
@@ -571,7 +569,7 @@ Ctrl + C
 
 ---
 
-<h2 id="fazer-o-deploy">7. 🚀 Fazer o deploy</h2>
+<h2 id="fazer-o-deploy">11. 🚀 Fazer o deploy</h2>
 
 Depois de validar o build e o `firebase.json`, execute:
 
@@ -599,7 +597,7 @@ publica somente os recursos relacionados ao Firebase Hosting.
 
 ---
 
-<h2 id="proximos-deploys">8. 🔁 Próximos deploys</h2>
+<h2 id="proximos-deploys">12. 🔁 Próximos deploys</h2>
 
 Depois que a configuração inicial estiver pronta, os próximos deploys ficam muito mais simples.
 
@@ -654,7 +652,7 @@ firebase deploy --only hosting
 
 ---
 
-<h2 id="estrutura-do-projeto">9. 📁 Estrutura do projeto</h2>
+<h2 id="estrutura-do-projeto">13. 📁 Estrutura do projeto</h2>
 
 Uma estrutura típica poderá ser:
 
@@ -687,9 +685,9 @@ A pasta `dist/` é gerada automaticamente pelo processo de build.
 
 ---
 
-<h2 id="troubleshooting">10. 🛠️ Troubleshooting
+<h2 id="troubleshooting">14. 🛠️ Troubleshooting</h2>
 
-## `firebase` não é reconhecido
+### `firebase` não é reconhecido
 
 Instale ou reinstale o Firebase CLI:
 
@@ -711,7 +709,7 @@ npm prefix -g
 
 ---
 
-## `Page Not Found`
+### `Page Not Found`
 
 Verifique:
 
@@ -742,7 +740,7 @@ o `firebase.json` deve utilizar:
 
 ---
 
-## `Could not detect project root`
+### `Could not detect project root`
 
 Execute os comandos dentro da pasta que contém:
 
@@ -754,7 +752,7 @@ src/
 
 ---
 
-## Rotas internas retornam 404
+### Rotas internas retornam 404
 
 Confirme se o `firebase.json` possui:
 
@@ -783,7 +781,7 @@ O rewrite permite que o Firebase entregue o `index.html` para URLs que serão in
 
 ---
 
-## Alterações não aparecem no navegador
+### Alterações não aparecem no navegador
 
 Tente:
 
@@ -796,7 +794,7 @@ Tente:
 
 ---
 
-## Arquivos estáticos não carregam
+### Arquivos estáticos não carregam
 
 Confirme:
 
@@ -822,7 +820,7 @@ Exemplo:
 
 <h2 id="boas-praticas">11. 🧠 Boas práticas
 
-## ⚡ Utilize o build de produção
+### ⚡ Utilize o build de produção
 
 Para publicar, prefira:
 
@@ -834,7 +832,7 @@ O build de produção aplica otimizações adequadas para publicação.
 
 ---
 
-## 📁 Não versione `dist`
+### 📁 Não versione `dist`
 
 Adicione ao `.gitignore`:
 
@@ -845,7 +843,7 @@ dist/
 
 ---
 
-## 🧪 Teste antes de publicar
+### 🧪 Teste antes de publicar
 
 Utilize o emulador do Hosting:
 
@@ -855,7 +853,7 @@ firebase emulators:start --only hosting
 
 ---
 
-## 🔬 Utilize canais de preview
+### 🔬 Utilize canais de preview
 
 Para criar uma publicação temporária:
 
@@ -867,7 +865,7 @@ O Firebase fornecerá uma URL de preview que pode ser utilizada para validação
 
 ---
 
-## 🌎 Utilize aliases para ambientes
+### 🌎 Utilize aliases para ambientes
 
 Exemplo de `.firebaserc`:
 
@@ -901,7 +899,7 @@ firebase use
 
 ---
 
-## 🔐 Evite publicar arquivos sensíveis
+### 🔐 Evite publicar arquivos sensíveis
 
 Nunca coloque no diretório público:
 
@@ -915,7 +913,7 @@ Nunca coloque no diretório público:
 
 ---
 
-## Angular client-side × SSR
+### Angular client-side × SSR
 
 Este tutorial utiliza o **Firebase Hosting clássico** para uma aplicação Angular client-side/SPA.
 
@@ -925,7 +923,7 @@ Para aplicações Angular com necessidades de renderização no servidor e integ
 
 ---
 
-<h2 id="como-contribuir">12. 🤝 Contribuindo para o Projeto</h2>
+<h2 id="contribuindo">16. 🤝 Contribuindo para o Projeto</h2>
 
 Adicione este projeto ao seu "deck" de desenvolvedor!  
 
@@ -944,7 +942,7 @@ Adicione este projeto ao seu "deck" de desenvolvedor!
 
 ---
 
-<h2 id="faq">13. 🧠 Perguntas Frequentes</h2>
+<h2 id="faq">17. 🧠 Perguntas Frequentes</h2>
 
 <details>
 <summary><strong>Por que preciso executar o `ng build` antes do deploy? ❓</strong></summary>
@@ -978,7 +976,7 @@ Adicione este projeto ao seu "deck" de desenvolvedor!
 
 ---
 
-<h2 id="checklist-final">14. ✅ Checklist final</h2>
+<h2 id="checklist-final">18. ✅ Checklist final</h2>
 
 Antes do primeiro deploy:
 
@@ -1004,7 +1002,7 @@ Antes do primeiro deploy:
 
 ---
 
-<h2 id="referencias-oficiais">15. 📚 Referências oficiais:
+<h2 id="referencias-oficiais">19. 📚 Referências oficiais:</h2>
 
 &nbsp;
 
@@ -1030,7 +1028,7 @@ Antes do primeiro deploy:
 
 ---
 
-<h2 id="regra-mais-importante">16. 📌 Regra mais importante
+<h2 id="regra-mais-importante">20. 📌 Regra mais importante</h2>
 
 O valor de: `hosting.public` no `firebase.json` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.
 
@@ -1080,7 +1078,7 @@ Esse comando permite descobrir rapidamente qual deve ser o valor de:
 
 ---
 
-<h2 id="créditos">17. 📝 Créditos & Reconhecimentos</h2>
+<h2 id="creditos-licenca-perfil">21. 📝 Créditos, Licença e Perfil</h2>
 
 | Atribuição       | Responsável / Recurso | Descrição                                                      |
 | :--------------- | :-------------------- | :------------------------------------------------------------- |
@@ -1091,7 +1089,7 @@ Esse comando permite descobrir rapidamente qual deve ser o valor de:
 
 ---
 
-<h2 id="licença">18. 📄 Licença</h2>
+### 📄 Licença
 
 Este tutorial pode ser utilizado como material de estudo e referência para projetos Angular publicados utilizando Firebase Hosting. Só não se esqueça de dar os **Devidos Créditos** ao **Desenvolvedor do Projeto.**
 
@@ -1099,7 +1097,7 @@ Este projeto está sob a: &nbsp; [![Licença MIT](https://img.shields.io/badge/L
 
 ---
 
-<h2 id="perfil-do-github">19. 👨‍💻 Perfil do GitHub</h2>
+### 👨‍💻 Perfil do GitHub
 
 Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositório Oficial ,no ícone abaixo:
 
@@ -1110,7 +1108,7 @@ Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositóri
 ---
 
 <p align="center">
-  <a href="#1--deploy-de-angular-20-no-firebase-hosting">
+  <a href="#deploy-angular-firebase-hosting">
     <img src="https://img.shields.io/badge/⬆️%20Voltar%20ao%20topo-1A73E8?style=for-the-badge" alt="Voltar ao topo">
   </a>
 </p>
