@@ -1010,8 +1010,6 @@ Antes do primeiro deploy:
 
 [![Firebase App Hosting](https://img.shields.io/badge/Firebase-App%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/app-hosting)
 
-[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/hosting)
-
 [![Firebase CLI - Documentação Oficial](https://img.shields.io/badge/Firebase-CLI%20-%20Documenta%C3%A7%C3%A3o%20Oficial-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/cli)
 
 [![Get Started with Firebase Hosting](https://img.shields.io/badge/Firebase-Get%20Started%20with%20Firebase%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/hosting/quickstart)
