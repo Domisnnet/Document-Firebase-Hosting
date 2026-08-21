@@ -1010,21 +1010,21 @@ Antes do primeiro deploy:
 
 [![Firebase CLI - Documentação Oficial](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=CLI%20-%20Documentação%20Oficial)](https://firebase.google.com/docs/cli)
 
-[![Get Started with Firebase Hosting](https://img.shields.io/badge/Get%20Started%20with-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Firebase%20Hosting)](https://firebase.google.com/docs/hosting/quickstart)
+[![Get Started with Firebase Hosting](https://img.shields.io/badge/Get%20Started%20with-Firebase%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/hosting/quickstart)
 
-[![Configuração Completa do Firebase Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Configuração%20Completa%20do%20Firebase%20Hosting)](https://firebase.google.com/docs/hosting/full-config)
+[![Configuração Completa do Firebase Hosting](https://img.shields.io/badge/Configuração%20Completa%20do-Firebase%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/hosting/full-config)
 
-[![Integração Angular + Firebase Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Integração%20Angular%20%2B%20Firebase%20Hosting)](https://firebase.google.com/docs/hosting/frameworks/angular)
+[![Integração Angular + Firebase Hosting](https://img.shields.io/badge/Integração-FFCA28?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E&color=FFCA28&message=Angular%20%2B%20Firebase%20Hosting)](https://firebase.google.com/docs/hosting/frameworks/angular)
 
 [![Firebase App Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=App%20Hosting)](https://firebase.google.com/docs/app-hosting)
 
-[![Angular](https://img.shields.io/badge/Angular-6E6E6E?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/)
+[![Angular](https://img.shields.io/badge/Angular-6E6E6E?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E&color=DD0031)](https://angular.dev/)
 
-[![Compatibilidade de Versões do Angular](https://img.shields.io/badge/Angular-6E6E6E?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E&color=DD0031&message=Compatibilidade%20de%20Versões)](https://angular.dev/reference/versions)
+[![Compatibilidade de Versões do Angular](https://img.shields.io/badge/Compatibilidade%20de%20Versões%20do-Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E)](https://angular.dev/reference/versions)
 
 [![Angular CLI](https://img.shields.io/badge/Angular-6E6E6E?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E&color=DD0031&message=CLI)](https://angular.dev/tools/cli)
 
-[![Build de Aplicações Angular](https://img.shields.io/badge/Angular-6E6E6E?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E&color=DD0031&message=Build%20de%20Aplicações)](https://angular.dev/tools/cli/build)
+[![Build de Aplicações Angular](https://img.shields.io/badge/Build%20de%20Aplicações-Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E)](https://angular.dev/tools/cli/build)
 
 ---
 
