@@ -804,7 +804,7 @@ Exemplo:
   <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
 ```
 
-* A imagem deve aparecer como nesse Exemplo: 
+* A imagem deve aparecer como no exemplo Abaixo: 
 
 <p>
   <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
