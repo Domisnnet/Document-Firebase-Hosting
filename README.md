@@ -800,9 +800,9 @@ Confirme:
 
 Exemplo:
 
-```html:`
+```html:
   <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
-``
+```
 
 <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
 
