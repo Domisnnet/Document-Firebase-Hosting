@@ -20,16 +20,15 @@
 
 ## 📚 Tabela de Conteúdo
 
-| 🎮 **Guia** | 🛠️ **Técnico** | 🤝 **Referência** |
+| 🚀 Guia | 🛠️ Técnico | 📚 Referência |
 | :---: | :---: | :---: |
-| [![1. Sobre](https://img.shields.io/badge/1%20-%20Sobre-4CAF50?style=flat-square)](#sobre-o-projeto) | [![6. Configuração](https://img.shields.io/badge/6%20-%20Configuração-00BCD4?style=flat-square)](#configuração-e-deploy) | [![11. Boas Práticas](https://img.shields.io/badge/11%20-%20Boas%20Práticas-9C27B0?style=flat-square)](#boas-praticas) |
-| [![2. Objetivo](https://img.shields.io/badge/2%20-%20Objetivo-2196F3?style=flat-square)](#objetivo) | [![7. Deploy](https://img.shields.io/badge/7%20-%20Deploy-00BCD4?style=flat-square)](#fazer-o-deploy) | [![12. Contribuir](https://img.shields.io/badge/12%20-%20Contribuir-9C27B0?style=flat-square)](#como-contribuir) |
-| [![3. Como Funciona](https://img.shields.io/badge/3%20-%20Como%20Funciona-FF9800?style=flat-square)](#como-funciona) | [![8. Próximos Deploys](https://img.shields.io/badge/8%20-%20Próximos%20Deploys-00BCD4?style=flat-square)](#proximos-deploys) | [![13. FAQ](https://img.shields.io/badge/13%20-%20FAQ-9C27B0?style=flat-square)](#faq) |
-| [![4. Tecnologias](https://img.shields.io/badge/4%20-%20Tecnologias-FF5722?style=flat-square)](#tecnologias-utilizadas) | [![9. Estrutura](https://img.shields.io/badge/9%20-%20Estrutura-00BCD4?style=flat-square)](#estrutura-do-projeto) | [![14. Checklist](https://img.shields.io/badge/14%20-%20Checklist-9C27B0?style=flat-square)](#checklist-final) |
-| [![5. Exemplo](https://img.shields.io/badge/5%20-%20Exemplo-795548?style=flat-square)](#exemplo-utilizado) | [![10. Troubleshooting](https://img.shields.io/badge/10%20-%20Troubleshooting-00BCD4?style=flat-square)](#troubleshooting) | [![15. Referências](https://img.shields.io/badge/15%20-%20Referências-9C27B0?style=flat-square)](#referencias-oficiais) |
-| | [![16. Regra Mais Importante](https://img.shields.io/badge/16%20-%20Regra%20Mais%20Importante-00BCD4?style=flat-square)](#regra-mais-importante) | [![17. Créditos](https://img.shields.io/badge/17%20-%20Créditos-9C27B0?style=flat-square)](#créditos) |
-| | | [![18. Licença](https://img.shields.io/badge/18%20-%20Licença-9C27B0?style=flat-square)](#licença) |
-| | | [![19. Perfil](https://img.shields.io/badge/19%20-%20Perfil-9C27B0?style=flat-square)](#perfil-do-github) |
+| [![1. Deploy](https://img.shields.io/badge/1%20-%20Deploy-4CAF50)](#1--deploy-de-angular-20-no-firebase-hosting) | [![7. Deploy](https://img.shields.io/badge/7%20-%20Deploy-009688)](#fazer-o-deploy) | [![13. FAQ](https://img.shields.io/badge/13%20-%20FAQ-FFC107)](#faq) |
+| [![2. Objetivo](https://img.shields.io/badge/2%20-%20Objetivo-2196F3)](#objetivo) | [![8. Próximos Deploys](https://img.shields.io/badge/8%20-%20Próximos%20Deploys-00BCD4)](#proximos-deploys) | [![14. Checklist](https://img.shields.io/badge/14%20-%20Checklist-4CAF50)](#checklist-final) |
+| [![3. Como Funciona](https://img.shields.io/badge/3%20-%20Como%20Funciona-FF9800)](#como-funciona) | [![9. Estrutura](https://img.shields.io/badge/9%20-%20Estrutura-607D8B)](#estrutura-do-projeto) | [![15. Referências](https://img.shields.io/badge/15%20-%20Referências-3F51B5)](#referencias-oficiais) |
+| [![4. Tecnologias](https://img.shields.io/badge/4%20-%20Tecnologias-9C27B0)](#tecnologias-utilizadas) | [![10. Troubleshooting](https://img.shields.io/badge/10%20-%20Troubleshooting-795548)](#troubleshooting) | [![16. Regra Mais Importante](https://img.shields.io/badge/16%20-%20Regra%20Mais%20Importante-F44336)](#regra-mais-importante) |
+| [![5. Exemplo](https://img.shields.io/badge/5%20-%20Exemplo-795548)](#exemplo-utilizado) | [![6. Configuração](https://img.shields.io/badge/6%20-%20Configuração-607D8B)](#configuração-e-deploy) | [![17. Créditos](https://img.shields.io/badge/17%20-%20Créditos-607D8B)](#créditos) |
+| [![11. Boas Práticas](https://img.shields.io/badge/11%20-%20Boas%20Práticas-9C27B0)](#boas-praticas) | [![12. Contribuir](https://img.shields.io/badge/12%20-%20Contribuir-3F51B5)](#como-contribuir) | [![18. Licença](https://img.shields.io/badge/18%20-%20Licença-E91E63)](#licença) [![19. Perfil](https://img.shields.io/badge/19%20-%20Perfil-212121)](#perfil-do-github) |
+
 
 ---
 
