@@ -1087,8 +1087,7 @@ Esse comando permite descobrir rapidamente qual deve ser o valor de:
 
 Este tutorial pode ser utilizado como material de estudo e referência para projetos Angular publicados utilizando Firebase Hosting. Só não se esqueça de dar os **Devidos Créditos** ao **Desenvolvedor do Projeto.**
 
-Este projeto está sob a: &nbsp;
- [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/license)
+Este projeto está sob a: &nbsp; [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/license)
 
 ---
 
