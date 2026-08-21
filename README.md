@@ -998,6 +998,7 @@ Antes do primeiro deploy:
 
 <h2 id="referencias-oficiais">15. 📚 Referências oficiais:
 
+&nbsp;
 
 [![Firebase Hosting](https://img.shields.io/badge/Firebase%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/docs/hosting)
 
