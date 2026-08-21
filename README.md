@@ -1109,6 +1109,6 @@ Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositóri
 
 <p align="center">
   <a href="#deploy-angular-firebase-hosting">
-    <img src="https://img.shields.io/badge/⬆️%20VOLTAR%20AO%20TOPO-0B1020?style=for-the-badge&labelColor=0B1020&color=6AE3FF" alt="Voltar ao topo">
+    <img src="https://img.shields.io/badge/⬆️%20VOLTAR%20AO%20TOPO-6AE3FF?style=for-the-badge&labelColor=111827&color=6AE3FF&logoColor=white" alt="Voltar ao topo">
   </a>
 </p>
