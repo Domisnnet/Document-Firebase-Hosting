@@ -1101,7 +1101,6 @@ Este projeto está sob a: &nbsp; [![Licença MIT](https://img.shields.io/badge/L
 
 Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositório Oficial ,no ícone abaixo:
 
-&nbsp;
 <a href="https://github.com/Domisnnet"> 
   <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
 </a>
