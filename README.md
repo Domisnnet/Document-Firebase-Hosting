@@ -1013,7 +1013,7 @@ Antes do primeiro deploy:
 
 <h2 id="regra-mais-importante">16. 📌 Regra mais importante
 
-> **O valor de `hosting.public` no `firebase.json` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.**
+> **O valor de :** `hosting.public` no `firebase.json` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.
 
 Exemplo:
 
