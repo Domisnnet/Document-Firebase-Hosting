@@ -1014,7 +1014,7 @@ Antes do primeiro deploy:
 
 [![Configuração Completa do Firebase Hosting](https://img.shields.io/badge/Configuração%20Completa%20do-Firebase%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E)](https://firebase.google.com/docs/hosting/full-config)
 
-[![Integração Angular + Firebase Hosting](https://img.shields.io/badge/Integração-FFCA28?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E&color=FFCA28&message=Angular%20%2B%20Firebase%20Hosting)](https://firebase.google.com/docs/hosting/frameworks/angular)
+[![Integração Angular + Firebase Hosting](https://img.shields.io/badge/Integração-Angular%20%2B%20Firebase%20Hosting-DD0031?style=for-the-badge&logo=angular&logoColor=white&labelColor=6E6E6E)](https://firebase.google.com/docs/hosting/frameworks/angular)
 
 [![Firebase App Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=App%20Hosting)](https://firebase.google.com/docs/app-hosting)
 
