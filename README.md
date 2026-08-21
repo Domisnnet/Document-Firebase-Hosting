@@ -1091,7 +1091,7 @@ Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositóri
 ***
 
 <p align="center">
-<a href="#-deploy-de-angular-20-no-firebase-hosting">
+<a href="#1--deploy-de-angular-20-no-firebase-hosting">
   <img src="https://img.shields.io/badge/⬆️%20Voltar%20ao%20topo-1A73E8?style=for-the-badge" alt="Voltar ao topo">
 </a>
 </p>
