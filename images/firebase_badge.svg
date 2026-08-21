@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60">
+  <rect width="200" height="60" fill="#ffca28" rx="8" />
+  <g transform="translate(15, 15) scale(1.25)">
+    <path fill="black" d="M3.653 15.333L2.89 15.58l8.356 2.533.91-.295L3.653 15.333zM2.872 14.3l.798.26L12 4.318 4.322.023 2.872 14.3zm16.512-3.855L12 4.318 19.347.01 21.13 14.3l-1.746-3.855z"/>
+  </g>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="24" fill="black">Firebase</text>
+</svg>

@@ -9,6 +9,7 @@
 ![Firebase](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=flat-square\&logo=firebase\&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-20.19%2B-339933?style=flat-square\&logo=node.js\&logoColor=white)
 ![Firebase CLI](https://img.shields.io/badge/Firebase_CLI-15%2B-FFCA28?style=flat-square\&logo=firebase\&logoColor=black)
+[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/LICENSE)
 
 > Guia técnico para conectar uma aplicação **Angular 20** a um projeto existente no **Firebase** e publicá-la utilizando o **Firebase Hosting**.
 >
@@ -45,7 +46,7 @@ O Firebase utiliza o arquivo `firebase.json` para definir o comportamento do Hos
 
 ---
 
-<h2 id="objetivo">3. 🔄 Como funciona</h2>
+<h2 id="como-funciona">3. 🔄 Como funciona</h2>
 
 O Angular não publica diretamente os arquivos presentes em `src/`.
 
@@ -791,7 +792,7 @@ Tente:
 
 Confirme:
 
-* Se os arquivos estão dentro de `src/assets`.
+* Se os arquivos estão dentro de `src/assets/ ou outro caminho de pasta que você utilize`.
 * Se o caminho utilizado no código está correto.
 * Se os assets estão configurados no `angular.json`.
 * Se o caminho respeita letras maiúsculas e minúsculas.
@@ -799,15 +800,13 @@ Confirme:
 
 Exemplo:
 
-```html
-<img src="images/logo.svg" alt="Logo">
-```
+<img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
 
 ---
 
 <h2 id="boas-praticas">11. 🧠 Boas práticas
 
-## Use build de produção
+## ⚡ Utilize o build de produção
 
 Para publicar, prefira:
 
@@ -819,7 +818,7 @@ O build de produção aplica otimizações adequadas para publicação.
 
 ---
 
-## Não versione a pasta `dist`
+## 📁 Não versione `dist`
 
 Adicione ao `.gitignore`:
 
@@ -830,7 +829,7 @@ dist/
 
 ---
 
-## Teste antes de publicar
+## 🧪 Teste antes de publicar
 
 Utilize o emulador do Hosting:
 
@@ -840,7 +839,7 @@ firebase emulators:start --only hosting
 
 ---
 
-## Utilize canais de preview
+## 🔬 Utilize canais de preview
 
 Para criar uma publicação temporária:
 
@@ -852,7 +851,7 @@ O Firebase fornecerá uma URL de preview que pode ser utilizada para validação
 
 ---
 
-## Utilize aliases para ambientes
+## 🌎 Utilize aliases para ambientes
 
 Exemplo de `.firebaserc`:
 
@@ -886,7 +885,7 @@ firebase use
 
 ---
 
-## Evite publicar arquivos sensíveis
+## 🔐 Evite publicar arquivos sensíveis
 
 Nunca coloque no diretório público:
 
@@ -910,7 +909,26 @@ Para aplicações Angular com necessidades de renderização no servidor e integ
 
 ---
 
-<h2 id="faq">12. 🧠 Perguntas Frequentes</h2>
+<h2 id="como-contribuir">12. 🤝 Contribuindo para o Projeto</h2>
+
+Adicione este projeto ao seu "deck" de desenvolvedor!  
+
+| Fase | Ação | Link / Comando |
+| :---: | :--- | :--- |
+| **01** | **Fork** | [![Fork](https://img.shields.io/badge/-Fazer%20Fork-blue?style=flat-square&logo=github)](https://github.com/Domisnnet/Document-Firebase-Hosting/fork) |
+| **02** | **Branch** | `git checkout -b feature/MinhaMelhoria` |
+| **03** | **Commit** | `git commit -m 'feat: nova seção de Documentação'` |
+| **04** | **Push** | `git push origin feature/MinhaMelhoria` |
+| **05** | **PR** | [![Abrir PR](https://img.shields.io/badge/-Abrir%20PR-green?style=flat-square&logo=git)](https://github.com/Domisnnet/Document-Firebase-Hosting/compare) 
+
+### 🐛 Encontrou um problema?
+
+[![Issues Abertas](https://img.shields.io/github/issues/Domisnnet/Document--Firebase--Hosting?style=flat-square&color=red&logo=github)](https://github.com/Domisnnet/Document-Firebase-Hosting/issues)
+[![Report Bug](https://img.shields.io/badge/Reportar-Erro-critical?style=flat-square&logo=github)](https://github.com/Domisnnet/Document-Firebase-Hosting/issues/new) 
+
+---
+
+<h2 id="faq">13. 🧠 Perguntas Frequentes</h2>
 
 <details>
 <summary><strong>Por que preciso executar o `ng build` antes do deploy? ❓</strong></summary>
@@ -944,7 +962,7 @@ Para aplicações Angular com necessidades de renderização no servidor e integ
 
 ---
 
-<h2 id="checklist-final">13. ✅ Checklist final</h2>
+<h2 id="checklist-final">14. ✅ Checklist final</h2>
 
 Antes do primeiro deploy:
 
@@ -970,7 +988,7 @@ Antes do primeiro deploy:
 
 ---
 
-<h2 id="referencias-oficiais">14. 📚 Referências oficiais
+<h2 id="referencias-oficiais">15. 📚 Referências oficiais
 
 * [Firebase Hosting](https://firebase.google.com/docs/hosting)
 * [Firebase CLI](https://firebase.google.com/docs/cli)
@@ -985,7 +1003,7 @@ Antes do primeiro deploy:
 
 ---
 
-<h2 id="regra-mais-importante">15. 📌 Regra mais importante
+<h2 id="regra-mais-importante">16. 📌 Regra mais importante
 
 > **O valor de `hosting.public` no `firebase.json` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.**
 
@@ -1035,7 +1053,28 @@ Esse comando permite descobrir rapidamente qual deve ser o valor de:
 
 ---
 
-<h2 id="perfil-do-github">16. 👨‍💻 Perfil do GitHub</h2>
+<h2 id="créditos">17. 📝 Créditos & Reconhecimentos</h2>
+
+| Atribuição       | Responsável / Recurso | Descrição                                                      |
+| :--------------- | :-------------------- | :------------------------------------------------------------- |
+| **Framework**    | **Angular**           | Framework utilizado para desenvolvimento da aplicação.         |
+| **Hosting**      | **Google Firebase**   | Infraestrutura utilizada para hospedagem da aplicação.         |
+| **CLI**          | **Firebase CLI**      | Ferramenta utilizada para autenticação, configuração e deploy. |
+| **Documentação** | **DomisDev**          | Organização e documentação do processo de deploy.              |
+
+---
+
+<h2 id="licença">18. 📄 Licença</h2>
+
+Este tutorial pode ser utilizado como material de estudo e referência para projetos Angular publicados utilizando Firebase Hosting. Só não se esqueça de dar os **Devidos Créditos** ao **Desenvolvedor do Projeto.**
+
+Este projeto está sob a [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/LICENSE)
+
+---
+
+<h2 id="perfil-do-github">19. 👨‍💻 Perfil do GitHub</h2>
+
+Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositório Oficial ,no botão abixo:
 
 <a href="https://github.com/Domisnnet"> 
   <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
