@@ -1,5 +1,3 @@
-
-
 # 📘 Deploy de Angular no Firebase Hosting
 
 <p align="center">
@@ -931,10 +929,6 @@ Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou
 ***
 
 <div align="center">
-
-[
-
-<br>
 
 **Feito com ❤️ para projetos Angular e Firebase**
 </div>
