@@ -1,63 +1,47 @@
 # 📘 Deploy de Angular no Firebase Hosting
 
-<p align="center">
-  <a href="https://angular.dev/" target="_blank">
-    <img src="https://img.shields.io/badge/Angular-17%2B-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular 17 ou superior">
-  </a>
-  <a href="https://firebase.google.com/docs/hosting" target="_blank">
-    <img src="https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000" alt="Firebase Hosting">
-  </a>
-  <a href="https://nodejs.org/" target="_blank">
-    <img src="https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js 18 ou superior">
-  </a>
-  <a href="https://firebase.google.com/docs/cli" target="_blank">
-    <img src="https://img.shields.io/badge/Firebase_CLI-15.x%2B-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000" alt="Firebase CLI">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://firebase.google.com/docs/hosting">
-    <img src="https://img.shields.io/badge/Documentação-Firebase%20Hosting-1A73E8?style=flat-square&logo=googlecloud&logoColor=white" alt="Documentação do Firebase Hosting">
-  </a>
-  <a href="https://angular.dev/tools/cli/build">
-    <img src="https://img.shields.io/badge/Documentação-Angular%20Build-DD0031?style=flat-square&logo=angular&logoColor=white" alt="Documentação do Angular Build">
-  </a>
-  <a href="https://github.com/">
-    <img src="https://img.shields.io/badge/Deploy-Firebase%20Hosting-FFCA28?style=flat-square&logo=firebase&logoColor=000000" alt="Deploy no Firebase Hosting">
-  </a>
-</p>
-
 > Documentação técnica para publicar uma aplicação Angular no Firebase Hosting.  
 > **Nível:** intermediário → avançado  
 > **Última atualização:** agosto de 2026
 
-***
+[![Angular](https://img.shields.io/badge/Angular-17%2B-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/)
+[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/hosting)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Firebase CLI](https://img.shields.io/badge/Firebase_CLI-15.x%2B-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/cli)
 
-## 📑 Tabela de conteúdos
+---
 
-- [🎯 Objetivo](#-objetivo)
-- [🔄 Como funciona](#-como-funciona)
-- [✅ Pré-requisitos](#-pré-requisitos)
-- [🧪 Exemplo utilizado](#-exemplo-utilizado)
-- [🚀 Passo a passo](#-passo-a-passo)
-  - [1. Instalar o Firebase CLI](#1-instalar-o-firebase-cli)
-  - [2. Fazer login no Firebase](#2-fazer-login-no-firebase)
-  - [3. Entrar na pasta do projeto](#3-entrar-na-pasta-do-projeto)
-  - [4. Associar o projeto Angular ao Firebase](#4-associar-o-projeto-angular-ao-firebase)
-  - [5. Inicializar o Firebase Hosting](#5-inicializar-o-firebase-hosting)
-  - [6. Gerar o build de produção](#6-gerar-o-build-de-produção)
-  - [7. Localizar o `index.html`](#7-localizar-o-indexhtml)
-  - [8. Configurar o `firebase.json`](#8-configurar-o-firebasejson)
-  - [9. Testar localmente](#9-testar-localmente)
-  - [10. Fazer o deploy](#10-fazer-o-deploy)
-- [🔁 Fluxo dos próximos deploys](#-fluxo-dos-próximos-deploys)
-- [📁 Estrutura do projeto](#-estrutura-do-projeto)
-- [🛠️ Troubleshooting](#️-troubleshooting)
-- [🧠 Boas práticas](#-boas-práticas)
-- [✅ Checklist final](#-checklist-final)
-- [📚 Referências oficiais](#-referências-oficiais)
+## 📑 Conteúdos
 
-***
+- [1. Visão geral](#1-visão-geral)
+  - [Objetivo](#objetivo)
+  - [Como funciona](#como-funciona)
+- [2. Preparação](#2-preparação)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Exemplo utilizado](#exemplo-utilizado)
+- [3. Implementação](#3-implementação)
+  - [3.1 Instalar o Firebase CLI](#31-instalar-o-firebase-cli)
+  - [3.2 Fazer login no Firebase](#32-fazer-login-no-firebase)
+  - [3.3 Entrar na pasta do projeto](#33-entrar-na-pasta-do-projeto)
+  - [3.4 Associar o projeto Angular ao Firebase](#34-associar-o-projeto-angular-ao-firebase)
+  - [3.5 Inicializar o Firebase Hosting](#35-inicializar-o-firebase-hosting)
+  - [3.6 Gerar o build de produção](#36-gerar-o-build-de-produção)
+  - [3.7 Localizar o index.html](#37-localizar-o-indexhtml)
+  - [3.8 Configurar o firebase.json](#38-configurar-o-firebasejson)
+  - [3.9 Testar localmente](#39-testar-localmente)
+  - [3.10 Fazer o deploy](#310-fazer-o-deploy)
+- [4. Operação](#4-operação)
+  - [Fluxo dos próximos deploys](#fluxo-dos-próximos-deploys)
+  - [Estrutura do projeto](#estrutura-do-projeto)
+- [5. Manutenção](#5-manutenção)
+  - [Troubleshooting](#troubleshooting)
+  - [Boas práticas](#boas-práticas)
+  - [Checklist final](#checklist-final)
+- [6. Referências](#6-referências)
+  - [Referências oficiais](#referências-oficiais)
+  - [Regra mais importante](#regra-mais-importante)
+
+---
 
 ## 🎯 Objetivo
 
