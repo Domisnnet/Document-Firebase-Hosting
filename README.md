@@ -1,63 +1,89 @@
-# 📘 Deploy de Angular no Firebase Hosting
+# 📘 Deploy de Angular 20 no Firebase Hosting
 
-![Documentação](https://img.shields.io/badge/Documentação-Técnica-1A73E8?style=for-the-badge&logo=markdown&logoColor=white)
-![Nível](https://img.shields.io/badge/Nível-Intermediário%20→%20Avançado-7B1FA2?style=for-the-badge)
+![Documentação](https://img.shields.io/badge/Documentação-Técnica-1A73E8?style=for-the-badge\&logo=markdown\&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge\&logo=angular\&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Atualizado-4CAF50?style=for-the-badge)
 ![Atualização](https://img.shields.io/badge/Atualizado-Agosto%202026-607D8B?style=for-the-badge)
 
-[![Angular](https://img.shields.io/badge/Angular-17%2B-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/)
-[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/hosting)
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Firebase CLI](https://img.shields.io/badge/Firebase_CLI-15.x%2B-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/cli)
+[![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge\&logo=angular\&logoColor=white)](https://angular.dev/)
+[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=000000)](https://firebase.google.com/docs/hosting)
+[![Node.js](https://img.shields.io/badge/Node.js-20.19%2B-339933?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
+[![Firebase CLI](https://img.shields.io/badge/Firebase_CLI-15%2B-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=000000)](https://firebase.google.com/docs/cli)
 
-> Documentação técnica para publicar uma aplicação Angular no Firebase Hosting.  
-> **Nível:** intermediário → avançado  
+> Guia técnico para conectar uma aplicação **Angular 20** a um projeto existente no **Firebase** e publicá-la utilizando o **Firebase Hosting**.
+>
+> **Nível:** intermediário → avançado
 > **Última atualização:** agosto de 2026
 
 ---
 
 ## 📚 Tabela de Conteúdo
 
-| 🚀 Configuração | 🏗️ Build & Publicação | 🛠️ Suporte & Referências |
-| :---: | :---: | :---: |
-| [![1. Objetivo](https://img.shields.io/badge/1%20-%20Objetivo-4CAF50?style=flat-square)](#objetivo) | [![5. Build](https://img.shields.io/badge/5%20-%20Build-607D8B?style=flat-square)](#build-producao) | [![9. Erros](https://img.shields.io/badge/9%20-%20Erros-F44336?style=flat-square)](#troubleshooting) |
-| [![2. Requisitos](https://img.shields.io/badge/2%20-%20Requisitos-2196F3?style=flat-square)](#pre-requisitos) | [![6. Hosting](https://img.shields.io/badge/6%20-%20Hosting-FF9800?style=flat-square)](#firebase-json) | [![10. Práticas](https://img.shields.io/badge/10%20-%20Práticas-9C27B0?style=flat-square)](#boas-praticas) |
-| [![3. Firebase CLI](https://img.shields.io/badge/3%20-%20Firebase%20CLI-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](#firebase-cli) | [![7. Testar](https://img.shields.io/badge/7%20-%20Testar-00BCD4?style=flat-square)](#testar-localmente) | [![11. Checklist](https://img.shields.io/badge/11%20-%20Checklist-4CAF50?style=flat-square)](#checklist-final) |
-| [![4. Associar](https://img.shields.io/badge/4%20-%20Associar-3F51B5?style=flat-square&logo=firebase&logoColor=white)](#associar-projeto) | [![8. Deploy](https://img.shields.io/badge/8%20-%20Deploy-009688?style=flat-square&logo=firebase&logoColor=white)](#fazer-deploy) | [![12. Referências](https://img.shields.io/badge/12%20-%20Referências-795548?style=flat-square)](#referencias) |
+* [1. 🎯 Objetivo](#1--objetivo)
+* [2. 🔄 Como funciona](#2--como-funciona)
+* [3. ✅ Pré-requisitos](#3--pré-requisitos)
+* [4. 🧪 Exemplo utilizado](#4--exemplo-utilizado)
+* [5. 🚀 Configuração inicial](#5--configuração-inicial)
+
+  * [5.1 Instalar o Firebase CLI](#51--instalar-o-firebase-cli)
+  * [5.2 Fazer login no Firebase](#52--fazer-login-no-firebase)
+  * [5.3 Entrar na pasta do projeto](#53--entrar-na-pasta-do-projeto)
+  * [5.4 Gerar o build](#54--gerar-o-build)
+  * [5.5 Localizar o `index.html`](#55--localizar-o-indexhtml)
+  * [5.6 Associar o projeto ao Firebase](#56--associar-o-projeto-ao-firebase)
+  * [5.7 Inicializar o Firebase Hosting](#57--inicializar-o-firebase-hosting)
+  * [5.8 Configurar o `firebase.json`](#58--configurar-o-firebasejson)
+* [6. 🏗️ Validar o build](#6--validar-o-build)
+* [7. 🧪 Testar localmente](#7--testar-localmente)
+* [8. 🚀 Fazer o deploy](#8--fazer-o-deploy)
+* [9. 🔁 Próximos deploys](#9--próximos-deploys)
+* [10. 📁 Estrutura do projeto](#10--estrutura-do-projeto)
+* [11. 🛠️ Troubleshooting](#11--troubleshooting)
+* [12. 🧠 Boas práticas](#12--boas-práticas)
+* [13. ✅ Checklist final](#13--checklist-final)
+* [14. 📚 Referências oficiais](#14--referências-oficiais)
+* [15. 📌 Regra mais importante](#15--regra-mais-importante)
+* [16. 👨‍💻 Perfil do GitHub](#16--perfil-do-github)
 
 ---
 
-<a id="objetivo"></a>
+## 1. 🎯 Objetivo
 
-## 🎯 Objetivo
-
-[![Foco](https://img.shields.io/badge/Foco-Deploy%20Angular%20%2B%20Firebase-4CAF50?style=flat-square)](#objetivo)
-[![Aplicação](https://img.shields.io/badge/Aplicação-Single--Page%20Application-673AB7?style=flat-square)](#como-funciona)
-
-Este guia mostra como conectar um projeto Angular existente a um projeto já criado no Firebase e publicá-lo utilizando o Firebase Hosting.
+Este guia mostra como conectar um projeto **Angular 20 existente** a um projeto já criado no **Firebase** e publicá-lo utilizando o **Firebase Hosting**.
 
 O processo inclui:
 
-- Instalação e autenticação do Firebase CLI.
-- Associação do projeto Angular ao projeto Firebase.
-- Configuração do Firebase Hosting.
-- Geração do build de produção.
-- Configuração de rotas para uma aplicação Single-Page Application.
-- Teste local e deploy da aplicação.
+* Instalação do Firebase CLI.
+* Autenticação da conta Google.
+* Associação do projeto Angular ao projeto Firebase.
+* Geração do build de produção.
+* Localização do `index.html` gerado pelo Angular.
+* Configuração do Firebase Hosting.
+* Configuração de rotas para uma aplicação Single-Page Application.
+* Teste local.
+* Deploy em produção.
 
 O Firebase utiliza o arquivo `firebase.json` para definir o comportamento do Hosting, incluindo a pasta pública, arquivos ignorados, rewrites e redirects.
 
+> **Importante:** este tutorial considera uma aplicação Angular client-side/SPA. Projetos Angular que utilizam SSR ou uma arquitetura full-stack podem exigir uma configuração diferente, incluindo o Firebase App Hosting.
+
 ---
 
-<a id="como-funciona"></a>
+## 2. 🔄 Como funciona
 
-## 🔄 Como funciona
+O Angular não publica diretamente os arquivos presentes em `src/`.
 
-[![Fluxo](https://img.shields.io/badge/Fluxo-Build%20→%20Hosting-607D8B?style=flat-square)](#como-funciona)
+Primeiro, o projeto precisa ser compilado com:
 
-O Angular não publica diretamente os arquivos presentes em `src/`. Primeiro, o projeto precisa ser compilado com `ng build`, que transforma o código TypeScript em JavaScript e gera os arquivos otimizados da aplicação.
+```bash
+ng build --configuration production
+```
+
+O build transforma o código TypeScript e demais recursos da aplicação em arquivos prontos para publicação.
 
 O Firebase Hosting publica somente a pasta definida na propriedade `hosting.public` do arquivo `firebase.json`.
+
+### Fluxo
 
 ```text
 Código-fonte Angular
@@ -66,82 +92,82 @@ ng build --configuration production
         ↓
 Pasta dist/
         ↓
+Localização do index.html
+        ↓
+firebase.json
+        ↓
 Firebase Hosting
         ↓
 Aplicação publicada
 ```
 
-> **Regra de ouro:** o valor de `hosting.public` precisa apontar para a pasta que contém diretamente o `index.html` gerado pelo build.
+> **Regra de ouro:** o valor de `hosting.public` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.
+
+Em projetos Angular recentes, essa pasta pode ser:
+
+```text
+dist/nome-do-projeto/browser
+```
+
+ou, dependendo da configuração do projeto:
+
+```text
+dist/nome-do-projeto
+```
+
+Por isso, **não presuma o caminho**. Sempre verifique onde o Angular realmente gerou o `index.html`.
 
 ---
 
-<a id="pre-requisitos"></a>
+## 3. ✅ Pré-requisitos
 
-## ✅ Pré-requisitos
+### Requisitos
 
-[![Node.js](https://img.shields.io/badge/Node.js-Requerido-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Angular CLI](https://img.shields.io/badge/Angular_CLI-Requerido-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.dev/tools/cli)
-[![Firebase CLI](https://img.shields.io/badge/Firebase_CLI-Requerido-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/cli)
+| Requisito        | Recomendação                       |
+| :--------------- | :--------------------------------- |
+| Angular          | Angular 20                         |
+| Node.js          | 20.19+                             |
+| npm              | Compatível com o Node.js instalado |
+| Angular CLI      | Compatível com Angular 20          |
+| Firebase CLI     | Versão atual                       |
+| Conta Google     | Com acesso ao projeto Firebase     |
+| Projeto Firebase | Criado no Firebase Console         |
+| Projeto Angular  | Existente e compilando localmente  |
+| VS Code          | Recomendado, mas opcional          |
 
-Antes de iniciar, certifique-se de que possui:
+Para Angular 20, utilize uma versão do Node.js compatível com a versão específica do Angular 20 utilizada no projeto.
 
-| Requisito | Recomendação |
-| :--- | :--- |
-| Node.js | Versão compatível com o Angular utilizado |
-| npm | Instalado junto com o Node.js |
-| Angular CLI | Compatível com a versão do projeto |
-| Firebase CLI | Versão atual |
-| Conta Google | Com acesso ao projeto Firebase |
-| Projeto Firebase | Criado no Firebase Console |
-| Projeto Angular | Existente e compilando localmente |
-| VS Code | Recomendado, mas opcional |
-
-Valide as ferramentas instaladas:
+Verifique as ferramentas instaladas:
 
 ```bash
 node --version
 npm --version
 ng version
+firebase --version
 ```
 
-[![Node.js](https://img.shields.io/badge/Verificar-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Angular CLI](https://img.shields.io/badge/Verificar-Angular_CLI-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.dev/tools/cli)
-[![Firebase CLI](https://img.shields.io/badge/Verificar-Firebase_CLI-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/cli)
+---
+
+## 4. 🧪 Exemplo utilizado
+
+Este tutorial utiliza como exemplo o projeto:
+
+| Item             | Valor                            |
+| :--------------- | :------------------------------- |
+| Projeto Angular  | `Shadow-Flip-Angular`            |
+| Projeto Firebase | `shadow-angular`                 |
+| URL esperada     | `https://shadow-angular.web.app` |
+| Angular          | `20`                             |
+
+Os nomes acima são utilizados como referência no tutorial.
+
+Substitua-os pelos nomes reais do seu projeto quando necessário.
 
 ---
 
-<a id="exemplo-utilizado"></a>
+# 5. 🚀 Configuração inicial
 
-## 🧪 Exemplo utilizado
-
-[![Exemplo](https://img.shields.io/badge/Projeto-Shadow--Flip--Angular-673AB7?style=flat-square)](#exemplo-utilizado)
-[![Firebase](https://img.shields.io/badge/Firebase-shadow--angular-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](#exemplo-utilizado)
-
-Neste documento, serão utilizados os seguintes nomes fictícios:
-
-| Item | Valor |
-| :--- | :--- |
-| Projeto Angular | `Shadow-Flip-Angular` |
-| Projeto Firebase | `shadow-angular` |
-| URL esperada | `https://shadow-angular.web.app` |
-
-Substitua esses valores pelos nomes reais do seu projeto.
-
----
-
-<a id="passo-a-passo"></a>
-
-## 🚀 Passo a passo
-
-[![Tutorial](https://img.shields.io/badge/Fluxo-10%20etapas-1A73E8?style=flat-square)](#passo-a-passo)
-
----
-
-<a id="firebase-cli"></a>
-
-### 1. Instalar o Firebase CLI
-
-[![Instalação](https://img.shields.io/badge/Etapa%201-Instalação-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](#firebase-cli)
+## 5.1 ⚙️ Instalar o Firebase CLI
 
 Abra o terminal integrado do VS Code e execute:
 
@@ -149,33 +175,33 @@ Abra o terminal integrado do VS Code e execute:
 npm install -g firebase-tools
 ```
 
-Verifique se a instalação foi concluída:
+Verifique a instalação:
 
 ```bash
 firebase --version
 ```
 
-Exemplo de saída:
+Exemplo:
 
 ```text
 15.27.0
 ```
 
-Se o comando `firebase` não for reconhecido, reinicie o terminal do VS Code. Caso o problema persista, verifique o diretório global do npm:
+Se o comando `firebase` não for reconhecido, reinicie o terminal do VS Code.
+
+Caso o problema persista, verifique o diretório global do npm:
 
 ```bash
 npm prefix -g
 ```
 
-[![Documentação Firebase CLI](https://img.shields.io/badge/Documentação-Firebase_CLI-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/cli)
+Documentação:
+
+https://firebase.google.com/docs/cli
 
 ---
 
-<a id="login-firebase"></a>
-
-### 2. Fazer login no Firebase
-
-[![Login](https://img.shields.io/badge/Etapa%202-Autenticação-1A73E8?style=flat-square&logo=google&logoColor=white)](#login-firebase)
+## 5.2 🔐 Fazer login no Firebase
 
 Execute:
 
@@ -202,25 +228,17 @@ shadow-angular          shadow-angular
 
 ---
 
-<a id="pasta-projeto"></a>
+## 5.3 📂 Entrar na pasta do projeto
 
-### 3. Entrar na pasta do projeto
+Navegue até a pasta raiz do projeto Angular.
 
-[![Diretório](https://img.shields.io/badge/Etapa%203-Projeto%20Angular-3F51B5?style=flat-square)](#pasta-projeto)
-
-Navegue até a pasta raiz do projeto Angular:
-
-```bash
-cd caminho/do/seu/projeto
-```
-
-#### Windows
+### Windows
 
 ```powershell
 cd "C:\Projects\Shadow-Flip-Angular"
 ```
 
-#### macOS ou Linux
+### macOS ou Linux
 
 ```bash
 cd ~/Projects/Shadow-Flip-Angular
@@ -228,13 +246,13 @@ cd ~/Projects/Shadow-Flip-Angular
 
 Confirme se está na pasta correta.
 
-#### Windows
+### Windows
 
 ```powershell
 dir
 ```
 
-#### macOS ou Linux
+### macOS ou Linux
 
 ```bash
 ls
@@ -248,95 +266,13 @@ package.json
 src/
 ```
 
----
-
-<a id="associar-projeto"></a>
-
-### 4. Associar o projeto Angular ao Firebase
-
-[![Vincular](https://img.shields.io/badge/Etapa%204-Vincular%20projeto-3F51B5?style=flat-square&logo=firebase&logoColor=white)](#associar-projeto)
-
-Execute:
-
-```bash
-firebase use --add
-```
-
-Selecione o projeto Firebase desejado e defina um alias, por exemplo:
-
-```text
-default
-```
-
-Esse processo cria ou atualiza o arquivo `.firebaserc`:
-
-```json
-{
-  "projects": {
-    "default": "shadow-angular"
-  }
-}
-```
-
-Confirme o projeto atualmente selecionado:
-
-```bash
-firebase use
-```
-
-A saída deverá indicar o projeto ativo:
-
-```text
-Active Project: shadow-angular
-```
+> Execute os comandos do Firebase a partir da raiz do projeto Angular.
 
 ---
 
-<a id="inicializar-hosting"></a>
+## 5.4 🏗️ Gerar o build
 
-### 5. Inicializar o Firebase Hosting
-
-[![Hosting](https://img.shields.io/badge/Etapa%205-Hosting-FFCA28?style=flat-square&logo=firebase&logoColor=000000)](#inicializar-hosting)
-
-Execute:
-
-```bash
-firebase init hosting
-```
-
-Durante o assistente, selecione ou informe:
-
-| Pergunta | Resposta recomendada |
-| :--- | :--- |
-| Use an existing project? | Sim |
-| Projeto Firebase | `shadow-angular` |
-| Public directory | Será definido após verificar o build |
-| Configure as a single-page app? | Sim |
-| Set up automatic builds with GitHub? | Opcional |
-
-Se preferir iniciar o Firebase manualmente, execute:
-
-```bash
-firebase init
-```
-
-Nesse caso, selecione apenas o recurso de Hosting:
-
-```text
-Hosting: Configure files for Firebase Hosting and optionally set up GitHub Action deploys
-```
-
-Não é necessário selecionar Firestore, Functions, Storage ou outros produtos quando o objetivo for apenas publicar o front-end Angular.
-
-O comando `firebase init` cria o arquivo `firebase.json` na raiz do projeto, arquivo utilizado para configurar os recursos do Firebase.
-
----
-
-<a id="build-producao"></a>
-
-### 6. Gerar o build de produção
-
-[![Build](https://img.shields.io/badge/Etapa%206-Build%20de%20produção-DD0031?style=flat-square&logo=angular&logoColor=white)](#build-producao)
+Antes de configurar o diretório público do Hosting, gere o build da aplicação.
 
 Execute:
 
@@ -344,15 +280,15 @@ Execute:
 ng build --configuration production
 ```
 
-Também é possível utilizar o script padrão do projeto:
+Também é possível utilizar o script definido no `package.json`:
 
 ```bash
 npm run build
 ```
 
-O Angular exibirá o diretório de saída do build.
+Após o build, o Angular exibirá informações sobre os arquivos gerados.
 
-Em projetos recentes, a estrutura poderá ser semelhante a:
+Uma estrutura possível em Angular 20 é:
 
 ```text
 dist/
@@ -370,17 +306,13 @@ Em outros projetos, o `index.html` poderá estar diretamente em:
 dist/shadow-flip-angular/
 ```
 
-> Não presuma o caminho da pasta `public`. Sempre confirme onde o build realmente gerou o `index.html`.
+> **Não configure `hosting.public` com base apenas no nome da pasta exibida no `dist`. Primeiro confirme onde o `index.html` foi realmente gerado.**
 
 ---
 
-<a id="localizar-index"></a>
+## 5.5 🔎 Localizar o `index.html`
 
-### 7. Localizar o `index.html`
-
-[![Index](https://img.shields.io/badge/Etapa%207-Localizar%20index.html-607D8B?style=flat-square)](#localizar-index)
-
-#### PowerShell
+### PowerShell
 
 Execute na raiz do projeto:
 
@@ -388,7 +320,7 @@ Execute na raiz do projeto:
 Get-ChildItem . -Filter index.html -Recurse | Select-Object FullName
 ```
 
-Exemplo de resultado:
+Exemplo:
 
 ```text
 C:\Projects\Shadow-Flip-Angular\dist\shadow-flip-angular\browser\index.html
@@ -400,37 +332,131 @@ Nesse caso, a pasta correta para o Firebase Hosting será:
 dist/shadow-flip-angular/browser
 ```
 
-#### macOS ou Linux
+### macOS ou Linux
 
 ```bash
 find . -type f -name "index.html"
 ```
 
-O valor configurado em `public` deve ser a pasta que contém o arquivo, e não o caminho completo do arquivo.
-
-#### Correto
+### Correto
 
 ```text
 dist/shadow-flip-angular/browser
 ```
 
-#### Incorreto
+### Incorreto
 
 ```text
 dist/shadow-flip-angular/browser/index.html
 ```
 
+A propriedade `public` recebe **a pasta**, não o caminho completo do arquivo.
+
 ---
 
-<a id="firebase-json"></a>
+## 5.6 🔗 Associar o projeto ao Firebase
 
-### 8. Configurar o `firebase.json`
+Execute:
 
-[![Configuração](https://img.shields.io/badge/Etapa%208-firebase.json-FF9800?style=flat-square)](#firebase-json)
+```bash
+firebase use --add
+```
 
-Abra o arquivo `firebase.json` na raiz do projeto e configure-o conforme a localização real do `index.html`.
+Selecione o projeto Firebase desejado.
 
-#### Exemplo com a pasta `browser`
+Defina um alias, por exemplo:
+
+```text
+default
+```
+
+Esse processo cria ou atualiza o arquivo:
+
+```text
+.firebaserc
+```
+
+Exemplo:
+
+```json
+{
+  "projects": {
+    "default": "shadow-angular"
+  }
+}
+```
+
+Confirme o projeto atualmente selecionado:
+
+```bash
+firebase use
+```
+
+Exemplo:
+
+```text
+Active Project: shadow-angular
+```
+
+---
+
+## 5.7 🔥 Inicializar o Firebase Hosting
+
+Execute:
+
+```bash
+firebase init hosting
+```
+
+Durante o assistente, selecione ou informe:
+
+| Pergunta                             | Resposta                        |
+| :----------------------------------- | :------------------------------ |
+| Use an existing project?             | Sim                             |
+| Projeto Firebase                     | `shadow-angular`                |
+| Public directory                     | Pasta que contém o `index.html` |
+| Configure as a single-page app?      | Sim                             |
+| Set up automatic builds with GitHub? | Opcional                        |
+
+Se o projeto já estiver associado ao Firebase e você utilizar:
+
+```bash
+firebase init
+```
+
+selecione apenas o recurso:
+
+```text
+Hosting: Configure files for Firebase Hosting and optionally set up GitHub Action deploys
+```
+
+Não é necessário selecionar Firestore, Functions, Storage ou outros produtos quando o objetivo for apenas publicar o front-end Angular.
+
+> **Atenção:** se você executar `firebase init` novamente e selecionar Hosting, revise o `firebase.json` depois. A inicialização pode alterar a seção `hosting` da configuração existente.
+
+---
+
+## 5.8 🔧 Configurar o `firebase.json`
+
+Abra:
+
+```text
+firebase.json
+```
+
+na raiz do projeto.
+
+O valor de `hosting.public` deve corresponder à pasta que contém diretamente o `index.html`.
+
+### Exemplo com `browser`
+
+Se o build gerar:
+
+```text
+dist/shadow-flip-angular/browser/index.html
+```
+
+utilize:
 
 ```json
 {
@@ -451,9 +477,9 @@ Abra o arquivo `firebase.json` na raiz do projeto e configure-o conforme a local
 }
 ```
 
-#### Exemplo sem a pasta `browser`
+### Exemplo sem `browser`
 
-Se o arquivo estiver em:
+Se o build gerar:
 
 ```text
 dist/shadow-flip-angular/index.html
@@ -480,61 +506,55 @@ utilize:
 }
 ```
 
-#### Significado das propriedades
+### Significado das propriedades
 
-| Propriedade | Finalidade |
-| :--- | :--- |
-| `public` | Define a pasta que será publicada |
-| `ignore` | Impede o envio de arquivos desnecessários |
-| `rewrites` | Encaminha determinadas URLs para outro recurso |
-| `source` | Define o padrão de URL correspondente |
-| `destination` | Define o destino da requisição |
-
-O Firebase permite configurar no `firebase.json` quais arquivos serão publicados e como as URLs serão processadas.
-
-#### Por que usar `rewrites`?
-
-O Angular utiliza roteamento no navegador. Rotas como as seguintes podem não existir como arquivos físicos:
-
-```text
-/
-/projects
-/about
-/contact
-```
-
-Sem um rewrite, o Firebase poderá procurar um arquivo físico chamado `projects`, `about` ou `contact` e retornar uma página 404.
-
-A regra abaixo entrega o `index.html` para essas rotas:
-
-```json
-"rewrites": [
-  {
-    "source": "**",
-    "destination": "/index.html"
-  }
-]
-```
-
-Depois disso, o Angular Router interpreta a URL e renderiza o componente correspondente.
-
-> A configuração acima é indicada para aplicações Angular client-side. Projetos com SSR possuem requisitos diferentes e devem ser configurados conforme a arquitetura utilizada.
+| Propriedade   | Finalidade                                |
+| :------------ | :---------------------------------------- |
+| `public`      | Define a pasta que será publicada         |
+| `ignore`      | Impede o envio de arquivos desnecessários |
+| `rewrites`    | Define regras de reescrita de URLs        |
+| `source`      | Define o padrão de URL correspondente     |
+| `destination` | Define o recurso que será entregue        |
 
 ---
 
-<a id="testar-localmente"></a>
+# 6. 🏗️ Validar o build
 
-### 9. Testar localmente
-
-[![Teste](https://img.shields.io/badge/Etapa%209-Emulador%20local-00BCD4?style=flat-square&logo=firebase&logoColor=000000)](#testar-localmente)
-
-Antes do deploy, gere o build:
+Antes do deploy, confirme novamente que o build foi gerado:
 
 ```bash
 ng build --configuration production
 ```
 
-Depois, inicie o emulador do Hosting:
+Depois, confirme a existência do `index.html`.
+
+### PowerShell
+
+```powershell
+Get-ChildItem . -Filter index.html -Recurse | Select-Object FullName
+```
+
+Exemplo:
+
+```text
+C:\Projects\Shadow-Flip-Angular\dist\shadow-flip-angular\browser\index.html
+```
+
+Nesse cenário:
+
+```json
+"public": "dist/shadow-flip-angular/browser"
+```
+
+> Se `hosting.public` estiver apontando para a pasta errada, o Firebase poderá publicar uma estrutura incorreta ou não encontrar o `index.html`.
+
+---
+
+# 7. 🧪 Testar localmente
+
+Antes do deploy, você pode testar o Hosting localmente.
+
+Execute:
 
 ```bash
 firebase emulators:start --only hosting
@@ -548,14 +568,15 @@ http://127.0.0.1:5000
 
 Valide:
 
-- Página inicial.
-- Rotas internas.
-- Atualização da página em uma rota profunda.
-- Imagens e arquivos da pasta `assets`.
-- Responsividade.
-- Console do navegador.
-- Links externos.
-- Integrações com APIs.
+* Página inicial.
+* Rotas internas.
+* Atualização da página em uma rota profunda.
+* Imagens.
+* Arquivos da pasta `assets`.
+* Responsividade.
+* Console do navegador.
+* Links externos.
+* Integrações com APIs.
 
 Para encerrar o emulador:
 
@@ -563,15 +584,9 @@ Para encerrar o emulador:
 Ctrl + C
 ```
 
-O Firebase Hosting oferece um emulador local para testar alterações antes da publicação em produção.
-
 ---
 
-<a id="fazer-deploy"></a>
-
-### 10. Fazer o deploy
-
-[![Deploy](https://img.shields.io/badge/Etapa%2010-Deploy%20em%20produção-009688?style=flat-square&logo=firebase&logoColor=white)](#fazer-deploy)
+# 8. 🚀 Fazer o deploy
 
 Depois de validar o build e o `firebase.json`, execute:
 
@@ -589,26 +604,37 @@ Hosting URL: https://shadow-angular.web.app
 
 Abra a URL no navegador e valide a aplicação em produção.
 
-O comando `firebase deploy --only hosting` publica somente os recursos relacionados ao Firebase Hosting.
+O comando:
 
-[![Acessar Firebase Hosting](https://img.shields.io/badge/Acessar-Firebase_Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/hosting)
+```bash
+firebase deploy --only hosting
+```
+
+publica somente os recursos relacionados ao Firebase Hosting.
 
 ---
 
-<a id="proximos-deploys"></a>
+# 9. 🔁 Próximos deploys
 
-## 🔁 Fluxo dos próximos deploys
+Depois que a configuração inicial estiver pronta, os próximos deploys ficam muito mais simples.
 
-[![Automação](https://img.shields.io/badge/Fluxo-Build%20%2B%20Deploy-009688?style=flat-square)](#proximos-deploys)
-
-Depois que a configuração inicial estiver pronta, o processo será:
+Execute:
 
 ```bash
 ng build --configuration production
 firebase deploy --only hosting
 ```
 
-Você também pode criar scripts no `package.json`:
+Ou utilize:
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+### Automatizando pelo `package.json`
+
+Você também pode criar um script:
 
 ```json
 {
@@ -619,17 +645,21 @@ Você também pode criar scripts no `package.json`:
 }
 ```
 
-Depois, execute apenas:
+Depois, execute:
 
 ```bash
 npm run deploy:hosting
 ```
 
-O comando abaixo poderá publicar outros recursos Firebase configurados no projeto:
+### Deploy de todos os recursos Firebase
+
+O comando:
 
 ```bash
 firebase deploy
 ```
+
+pode publicar outros recursos Firebase configurados no projeto.
 
 Para publicar somente o site, prefira:
 
@@ -639,11 +669,7 @@ firebase deploy --only hosting
 
 ---
 
-<a id="estrutura-projeto"></a>
-
-## 📁 Estrutura do projeto
-
-[![Estrutura](https://img.shields.io/badge/Projeto-Angular%20%2B%20Firebase-673AB7?style=flat-square)](#estrutura-projeto)
+# 10. 📁 Estrutura do projeto
 
 Uma estrutura típica poderá ser:
 
@@ -670,17 +696,15 @@ Shadow-Flip-Angular/
 └── tsconfig.json
 ```
 
-A pasta `dist/` é gerada automaticamente pelo processo de build e não deve ser editada manualmente.
+A pasta `dist/` é gerada automaticamente pelo processo de build.
+
+> **Não edite manualmente os arquivos dentro de `dist/`.**
 
 ---
 
-<a id="troubleshooting"></a>
+# 11. 🛠️ Troubleshooting
 
-## 🛠️ Troubleshooting
-
-[![Suporte](https://img.shields.io/badge/Suporte-Resolução%20de%20erros-F44336?style=flat-square)](#troubleshooting)
-
-### `firebase` não é reconhecido
+## `firebase` não é reconhecido
 
 Instale ou reinstale o Firebase CLI:
 
@@ -694,7 +718,7 @@ Depois, reinicie o terminal e valide:
 firebase --version
 ```
 
-Se o problema persistir, consulte o diretório global do npm:
+Se o problema persistir:
 
 ```bash
 npm prefix -g
@@ -702,15 +726,16 @@ npm prefix -g
 
 ---
 
-### Erro `Page Not Found`
+## `Page Not Found`
 
 Verifique:
 
-- Se o build foi executado.
-- Se o `index.html` existe.
-- Se `hosting.public` aponta para a pasta correta.
-- Se o deploy foi executado depois da alteração.
-- Se não existe outro `firebase.json` em uma pasta diferente.
+* Se o build foi executado.
+* Se o `index.html` existe.
+* Se `hosting.public` aponta para a pasta correta.
+* Se o `firebase.json` correto está sendo utilizado.
+* Se o deploy foi executado depois da alteração.
+* Se o projeto Firebase ativo é o correto.
 
 Localize o arquivo:
 
@@ -718,9 +743,21 @@ Localize o arquivo:
 Get-ChildItem . -Filter index.html -Recurse | Select-Object FullName
 ```
 
+Se o resultado for:
+
+```text
+...\dist\shadow-flip-angular\browser\index.html
+```
+
+o `firebase.json` deve utilizar:
+
+```json
+"public": "dist/shadow-flip-angular/browser"
+```
+
 ---
 
-### Erro `Could not detect project root`
+## `Could not detect project root`
 
 Execute os comandos dentro da pasta que contém:
 
@@ -732,7 +769,7 @@ src/
 
 ---
 
-### Rotas internas retornam 404
+## Rotas internas retornam 404
 
 Confirme se o `firebase.json` possui:
 
@@ -745,35 +782,44 @@ Confirme se o `firebase.json` possui:
 ]
 ```
 
-Depois, gere o build novamente e faça um novo deploy:
+Depois, gere o build novamente:
 
 ```bash
 ng build --configuration production
+```
+
+e faça um novo deploy:
+
+```bash
 firebase deploy --only hosting
 ```
 
+O rewrite permite que o Firebase entregue o `index.html` para URLs que serão interpretadas pelo Angular Router.
+
 ---
 
-### Alterações não aparecem no navegador
+## Alterações não aparecem no navegador
 
 Tente:
 
-- Atualizar a página com `Ctrl + F5`.
-- Abrir uma janela anônima.
-- Limpar o cache do navegador.
-- Confirmar se o deploy foi concluído.
-- Verificar a URL correta do projeto Firebase.
+* Atualizar com `Ctrl + F5`.
+* Abrir uma janela anônima.
+* Limpar o cache do navegador.
+* Confirmar se o deploy foi concluído.
+* Confirmar a URL do projeto Firebase.
+* Verificar se o build foi executado antes do deploy.
 
 ---
 
-### Arquivos estáticos não carregam
+## Arquivos estáticos não carregam
 
 Confirme:
 
-- Se os arquivos estão dentro de `src/assets`.
-- Se o caminho utilizado no código está correto.
-- Se os assets estão configurados no `angular.json`.
-- Se o caminho respeita letras maiúsculas e minúsculas.
+* Se os arquivos estão dentro de `src/assets`.
+* Se o caminho utilizado no código está correto.
+* Se os assets estão configurados no `angular.json`.
+* Se o caminho respeita letras maiúsculas e minúsculas.
+* Se os arquivos foram incluídos no build.
 
 Exemplo:
 
@@ -783,13 +829,9 @@ Exemplo:
 
 ---
 
-<a id="boas-praticas"></a>
+# 12. 🧠 Boas práticas
 
-## 🧠 Boas práticas
-
-[![Qualidade](https://img.shields.io/badge/Foco-Qualidade%20e%20segurança-9C27B0?style=flat-square)](#boas-praticas)
-
-### Use build de produção
+## Use build de produção
 
 Para publicar, prefira:
 
@@ -797,17 +839,11 @@ Para publicar, prefira:
 ng build --configuration production
 ```
 
-Esse perfil normalmente aplica otimizações como:
-
-- Minificação.
-- Tree-shaking.
-- Otimização de bundles.
-- Remoção de código não utilizado.
-- Geração de arquivos prontos para produção.
+O build de produção aplica otimizações adequadas para publicação.
 
 ---
 
-### Não versione a pasta `dist`
+## Não versione a pasta `dist`
 
 Adicione ao `.gitignore`:
 
@@ -818,9 +854,9 @@ dist/
 
 ---
 
-### Teste antes de publicar
+## Teste antes de publicar
 
-Use o emulador do Hosting:
+Utilize o emulador do Hosting:
 
 ```bash
 firebase emulators:start --only hosting
@@ -828,19 +864,19 @@ firebase emulators:start --only hosting
 
 ---
 
-### Use canais de preview
+## Utilize canais de preview
 
-Para gerar uma publicação temporária:
+Para criar uma publicação temporária:
 
 ```bash
 firebase hosting:channel:deploy preview
 ```
 
-O Firebase fornecerá uma URL de preview que poderá ser compartilhada para validação antes do deploy em produção.
+O Firebase fornecerá uma URL de preview que pode ser utilizada para validação antes do deploy em produção.
 
 ---
 
-### Use aliases para ambientes
+## Utilize aliases para ambientes
 
 Exemplo de `.firebaserc`:
 
@@ -860,7 +896,7 @@ Para selecionar um ambiente:
 firebase use production
 ```
 
-Depois, execute:
+Depois:
 
 ```bash
 firebase deploy --only hosting
@@ -874,75 +910,85 @@ firebase use
 
 ---
 
-### Evite publicar arquivos sensíveis
+## Evite publicar arquivos sensíveis
 
 Nunca coloque no diretório público:
 
-- Chaves privadas.
-- Arquivos `.env` com segredos.
-- Credenciais de service account.
-- Tokens de acesso.
-- Arquivos administrativos do Firebase.
+* Chaves privadas.
+* Arquivos `.env` contendo segredos.
+* Credenciais de service account.
+* Tokens de acesso.
+* Arquivos administrativos do Firebase.
 
-> A configuração do Firebase no front-end não deve conter credenciais privadas. Segredos devem permanecer em ambientes protegidos no back-end ou no pipeline de CI/CD.
+> A configuração do Firebase utilizada no front-end não deve ser confundida com credenciais privadas. Segredos devem permanecer em ambientes protegidos, no back-end ou no pipeline de CI/CD.
 
 ---
 
-<a id="checklist-final"></a>
+## Angular client-side × SSR
 
-## ✅ Checklist final
+Este tutorial utiliza o **Firebase Hosting clássico** para uma aplicação Angular client-side/SPA.
 
-[![Pré-deploy](https://img.shields.io/badge/Validação-Pré--deploy-4CAF50?style=flat-square)](#checklist-final)
+Se o projeto utiliza Angular SSR, prerenderização ou uma arquitetura full-stack, o processo de publicação pode ser diferente.
+
+Para aplicações Angular com necessidades de renderização no servidor e integração com GitHub, considere o **Firebase App Hosting**.
+
+---
+
+# 13. ✅ Checklist final
 
 Antes do primeiro deploy:
 
-- [ ] Node.js instalado.
-- [ ] npm funcionando.
-- [ ] Angular CLI disponível.
-- [ ] Firebase CLI instalado.
-- [ ] Login realizado com `firebase login`.
-- [ ] Projeto Firebase selecionado.
-- [ ] Projeto Angular compilando localmente.
-- [ ] Build de produção gerado.
-- [ ] `index.html` localizado.
-- [ ] `hosting.public` apontando para a pasta correta.
-- [ ] `rewrites` configurado para o Angular Router.
-- [ ] Emulador local validado, quando necessário.
-- [ ] Deploy executado com `firebase deploy --only hosting`.
-- [ ] URL de produção testada.
-- [ ] Rotas internas testadas.
-- [ ] Assets e imagens validados.
-- [ ] Console do navegador revisado.
+* [ ] Angular 20 configurado.
+* [ ] Node.js compatível com Angular 20.
+* [ ] npm funcionando.
+* [ ] Angular CLI disponível.
+* [ ] Firebase CLI instalado.
+* [ ] Login realizado com `firebase login`.
+* [ ] Projeto Firebase criado.
+* [ ] Projeto Firebase selecionado com `firebase use`.
+* [ ] Projeto Angular compilando localmente.
+* [ ] Build de produção gerado.
+* [ ] `index.html` localizado.
+* [ ] `hosting.public` apontando para a pasta correta.
+* [ ] `rewrites` configurado para o Angular Router.
+* [ ] Emulador local validado, quando necessário.
+* [ ] Deploy executado com `firebase deploy --only hosting`.
+* [ ] URL de produção testada.
+* [ ] Rotas internas testadas.
+* [ ] Assets e imagens validados.
+* [ ] Console do navegador revisado.
 
 ---
 
-<a id="referencias"></a>
+# 14. 📚 Referências oficiais
 
-## 📚 Referências oficiais
-
-[![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/hosting)
-[![Firebase CLI](https://img.shields.io/badge/Firebase-CLI-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000)](https://firebase.google.com/docs/cli)
-[![Angular CLI](https://img.shields.io/badge/Angular-CLI-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/tools/cli)
-
-- [Firebase Hosting](https://firebase.google.com/docs/hosting)
-- [Firebase CLI](https://firebase.google.com/docs/cli)
-- [Get started with Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart)
-- [Integração entre Angular e Firebase Hosting](https://firebase.google.com/docs/hosting/frameworks/angular)
-- [Configuração completa do `firebase.json`](https://firebase.google.com/docs/hosting/full-config)
-- [Documentação do Angular CLI](https://angular.dev/tools/cli)
-- [Build de aplicações Angular](https://angular.dev/tools/cli/build)
+* [Firebase Hosting](https://firebase.google.com/docs/hosting)
+* [Firebase CLI](https://firebase.google.com/docs/cli)
+* [Get started with Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart)
+* [Configuração completa do Firebase Hosting](https://firebase.google.com/docs/hosting/full-config)
+* [Integração entre Angular e Firebase Hosting](https://firebase.google.com/docs/hosting/frameworks/angular)
+* [Firebase App Hosting](https://firebase.google.com/docs/app-hosting)
+* [Angular](https://angular.dev/)
+* [Compatibilidade de versões do Angular](https://angular.dev/reference/versions)
+* [Angular CLI](https://angular.dev/tools/cli)
+* [Build de aplicações Angular](https://angular.dev/tools/cli/build)
 
 ---
 
-<a id="regra-mais-importante"></a>
+# 15. 📌 Regra mais importante
 
-## 📌 Regra mais importante
-
-[![Regra de ouro](https://img.shields.io/badge/Regra%20de%20ouro-hosting.public%20%3D%20pasta%20do%20index.html-D32F2F?style=for-the-badge)](#regra-mais-importante)
-
-O valor de `public` no `firebase.json` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.
+> **O valor de `hosting.public` no `firebase.json` deve apontar para a pasta que contém diretamente o `index.html` gerado pelo build.**
 
 Exemplo:
+
+```text
+dist/
+└── shadow-flip-angular/
+    └── browser/
+        └── index.html
+```
+
+Então:
 
 ```json
 {
@@ -952,26 +998,43 @@ Exemplo:
 }
 ```
 
-Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou o `index.html`, verifique:
+### Se aparecer `Page Not Found`
+
+Verifique, nesta ordem:
 
 1. O resultado do `ng build`.
 2. A localização real do `index.html`.
 3. O valor de `hosting.public`.
 4. A configuração de `rewrites`.
-5. Se o deploy foi executado novamente.
+5. O projeto Firebase ativo.
+6. Se o deploy foi executado novamente após as alterações.
+
+### Comando útil no Windows
+
+```powershell
+Get-ChildItem . -Filter index.html -Recurse | Select-Object FullName
+```
+
+Esse comando permite descobrir rapidamente qual deve ser o valor de:
+
+```json
+"hosting": {
+  "public": "..."
+}
+```
 
 ---
 
-<h2 id="perfil-do-github"> 👨‍💻 Perfil do GitHub</h2>
+# 16. 👨‍💻 Perfil do GitHub
 
-<a href="https://github.com/Domisnnet"> 
-  <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
+<a href="https://github.com/Domisnnet">
+  <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub">
 </a>
 
 ---
 
 <p align="center">
-
-<a href="#topo">
+<a href="#-deploy-de-angular-20-no-firebase-hosting">
   <img src="https://img.shields.io/badge/⬆️%20Voltar%20ao%20topo-1A73E8?style=for-the-badge" alt="Voltar ao topo">
 </a>
+</p>
