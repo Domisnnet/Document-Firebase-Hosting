@@ -1105,7 +1105,7 @@ Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositóri
   <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
 </a>
 
----
+&nbsp;
 
 <p align="center">
   <a href="#deploy-angular-firebase-hosting">
