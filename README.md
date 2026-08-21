@@ -937,12 +937,4 @@ Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou
 <br>
 
 **Feito com ❤️ para projetos Angular e Firebase**
-
 </div>
-
-Citações:
-[1] Configure Hosting behavior | Firebase Hosting - Google https://firebase.google.com/docs/hosting/full-config
-[2] Firebase CLI reference https://firebase.google.com/docs/cli
-[3] Building Angular apps https://angular.dev/tools/cli/build
-[4] Firebase Hosting - Google https://firebase.google.com/docs/hosting
-[5] Get started with Firebase Hosting https://firebase.google.com/docs/hosting/quickstart
