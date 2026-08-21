@@ -1006,11 +1006,11 @@ Antes do primeiro deploy:
 
 &nbsp;
 
-[![Firebase Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/docs/hosting)
+[![Firebase Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Hosting)](https://firebase.google.com/docs/hosting)
 
 [![Firebase CLI - Documentação Oficial](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=CLI%20-%20Documentação%20Oficial)](https://firebase.google.com/docs/cli)
 
-[![Get Started with Firebase Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Get%20Started%20with%20Firebase%20Hosting)](https://firebase.google.com/docs/hosting/quickstart)
+[![Get Started with Firebase Hosting](https://img.shields.io/badge/Get%20Started%20with-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Firebase%20Hosting)](https://firebase.google.com/docs/hosting/quickstart)
 
 [![Configuração Completa do Firebase Hosting](https://img.shields.io/badge/Firebase-6E6E6E?style=for-the-badge&logo=firebase&logoColor=black&labelColor=6E6E6E&color=FFCA28&message=Configuração%20Completa%20do%20Firebase%20Hosting)](https://firebase.google.com/docs/hosting/full-config)
 
