@@ -174,7 +174,7 @@ npm prefix -g
 
 Documentação:
 
-https://firebase.google.com/docs/cli
+[![Firebase CLI](https://img.shields.io/badge/Firebase%20CLI%20-%20Documentação%20Oficial-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/docs/cli)
 
 ---
 
