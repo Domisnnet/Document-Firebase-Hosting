@@ -807,7 +807,7 @@ Exemplo:
 * A imagem deve aparecer como no exemplo Abaixo: 
 
 <p align="center">
-  <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
+  <img src="images/firebase_badge.svg" width="120" alt="Badge do Firebase">
 </p>
 
 ---
