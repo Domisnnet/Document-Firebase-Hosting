@@ -4,11 +4,6 @@
 > **Nível:** intermediário → avançado  
 > **Última atualização:** agosto de 2026
 
-
-
-
-
-
 ***
 
 ## 📑 Tabela de conteúdos
