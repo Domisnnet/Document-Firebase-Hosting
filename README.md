@@ -967,10 +967,12 @@ Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou
 
 ---
 
-<h2 id="perfil-do-github">. 👨‍💻 Perfil do GitHub</h2>
+<h2 id="perfil-do-github"> 👨‍💻 Perfil do GitHub</h2>
 
 <a href="https://github.com/Domisnnet"> 
   <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
 </a>
+
+---
 
 [![Voltar ao topo](https://img.shields.io/badge/⬆️%20Voltar%20ao%20topo-1A73E8?style=for-the-badge)](#topo)
