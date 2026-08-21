@@ -9,7 +9,7 @@
 ![Firebase](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=flat-square\&logo=firebase\&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-20.19%2B-339933?style=flat-square\&logo=node.js\&logoColor=white)
 ![Firebase CLI](https://img.shields.io/badge/Firebase_CLI-15%2B-FFCA28?style=flat-square\&logo=firebase\&logoColor=black)
-[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/LICENSE)
+[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/license)
 
 > Guia técnico para conectar uma aplicação **Angular 20** a um projeto existente no **Firebase** e publicá-la utilizando o **Firebase Hosting**.
 >
@@ -800,6 +800,10 @@ Confirme:
 
 Exemplo:
 
+```html:`
+  <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
+``
+
 <img src="images/firebase_badge.svg" width="90" alt="Badge do Firebase">
 
 ---
@@ -1068,13 +1072,13 @@ Esse comando permite descobrir rapidamente qual deve ser o valor de:
 
 Este tutorial pode ser utilizado como material de estudo e referência para projetos Angular publicados utilizando Firebase Hosting. Só não se esqueça de dar os **Devidos Créditos** ao **Desenvolvedor do Projeto.**
 
-Este projeto está sob a [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/LICENSE)
+Este projeto está sob a [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Document-Firebase-Hosting/blob/main/license)
 
 ---
 
 <h2 id="perfil-do-github">19. 👨‍💻 Perfil do GitHub</h2>
 
-Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositório Oficial ,no botão abixo:
+Para conhecer os Projetos do **Desenvolvedor : DomisDev** , acesse o Repositório Oficial ,no ícone abaixo:
 
 <a href="https://github.com/Domisnnet"> 
   <img src="images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
