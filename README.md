@@ -11,35 +11,50 @@
 
 ---
 
-## 📑 Conteúdos
-
-- [1. Visão geral](#1-visão-geral)
-  - [Objetivo](#objetivo)
-  - [Como funciona](#como-funciona)
-- [2. Preparação](#2-preparação)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Exemplo utilizado](#exemplo-utilizado)
-- [3. Implementação](#3-implementação)
-  - [3.1 Instalar o Firebase CLI](#31-instalar-o-firebase-cli)
-  - [3.2 Fazer login no Firebase](#32-fazer-login-no-firebase)
-  - [3.3 Entrar na pasta do projeto](#33-entrar-na-pasta-do-projeto)
-  - [3.4 Associar o projeto Angular ao Firebase](#34-associar-o-projeto-angular-ao-firebase)
-  - [3.5 Inicializar o Firebase Hosting](#35-inicializar-o-firebase-hosting)
-  - [3.6 Gerar o build de produção](#36-gerar-o-build-de-produção)
-  - [3.7 Localizar o index.html](#37-localizar-o-indexhtml)
-  - [3.8 Configurar o firebase.json](#38-configurar-o-firebasejson)
-  - [3.9 Testar localmente](#39-testar-localmente)
-  - [3.10 Fazer o deploy](#310-fazer-o-deploy)
-- [4. Operação](#4-operação)
-  - [Fluxo dos próximos deploys](#fluxo-dos-próximos-deploys)
-  - [Estrutura do projeto](#estrutura-do-projeto)
-- [5. Manutenção](#5-manutenção)
-  - [Troubleshooting](#troubleshooting)
-  - [Boas práticas](#boas-práticas)
-  - [Checklist final](#checklist-final)
-- [6. Referências](#6-referências)
-  - [Referências oficiais](#referências-oficiais)
-  - [Regra mais importante](#regra-mais-importante)
+## 📑 Tabela de conteúdos
+| | Seção | Conteúdo |
+|:---:|---|---|
+| 🚀 | **[1. Visão geral](#1-visão-geral)** | Objetivo da documentação e funcionamento do fluxo Angular → Firebase Hosting |
+| 🧰 | **[2. Preparação](#2-preparação)** | Pré-requisitos, ferramentas necessárias e projeto utilizado como exemplo |
+| ⚙️ | **[3. Configuração inicial](#3-configuração-inicial)** | Instalação do Firebase CLI, autenticação e associação do projeto |
+| 🏗️ | **[4. Build da aplicação](#4-build-da-aplicação)** | Compilação do Angular e localização do `index.html` |
+| 🔧 | **[5. Configuração do Hosting](#5-configuração-do-hosting)** | Configuração do `firebase.json`, pasta `public` e regras de rewrite |
+| 🧪 | **[6. Validação local](#6-validação-local)** | Execução do emulador e testes antes da publicação |
+| 🌐 | **[7. Deploy em produção](#7-deploy-em-produção)** | Publicação da aplicação no Firebase Hosting |
+| 🔁 | **[8. Próximos deploys](#8-próximos-deploys)** | Fluxo recomendado para atualizações futuras |
+| 📁 | **[9. Estrutura do projeto](#9-estrutura-do-projeto)** | Organização dos arquivos Angular e Firebase |
+| 🛠️ | **[10. Troubleshooting](#10-troubleshooting)** | Solução dos erros mais comuns |
+| 🧠 | **[11. Boas práticas](#11-boas-práticas)** | Preview channels, aliases, segurança e otimização |
+| ✅ | **[12. Checklist final](#12-checklist-final)** | Lista de validação antes do primeiro deploy |
+| 🔗 | **[13. Referências oficiais](#13-referências-oficiais)** | Links oficiais do Angular, Firebase e Firebase CLI |
+### Fluxo visual
+```mermaid
+flowchart LR
+    A[💻 Projeto Angular] --> B[⚙️ ng build]
+    B --> C[📦 Pasta dist]
+    C --> D[🔍 Localizar index.html]
+    D --> E[🔧 Configurar firebase.json]
+    E --> F[🧪 Testar no emulador]
+    F --> G[🚀 firebase deploy]
+    G --> H[🌐 Firebase Hosting]
+```
+### Estrutura da documentação
+```text
+📘 Deploy Angular + Firebase Hosting
+│
+├── 🚀 Visão geral
+├── 🧰 Preparação
+├── ⚙️ Configuração inicial
+├── 🏗️ Build da aplicação
+├── 🔧 Configuração do Hosting
+├── 🧪 Validação local
+├── 🌐 Deploy em produção
+├── 🔁 Próximos deploys
+├── 📁 Estrutura do projeto
+├── 🛠️ Troubleshooting
+├── 🧠 Boas práticas
+├── ✅ Checklist final
+└── 🔗 Referências oficiais
 
 ---
 
