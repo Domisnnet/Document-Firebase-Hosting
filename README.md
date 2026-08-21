@@ -930,5 +930,5 @@ Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou
 
 <div align="center">
 
-**Feito com ❤️ para projetos Angular e Firebase**
+[![Voltar ao topo](https://img.shields.io/badge/⬆️_Voltar_ao_topo-1A73E8?style=for-the-badge)](#-deploy-de-angular-no-firebase-hosting
 </div>
