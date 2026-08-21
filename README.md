@@ -910,9 +910,10 @@ Se o Firebase exibir uma página `Page Not Found` ou informar que não encontrou
 4. A configuração de `rewrites`.
 5. Se o deploy foi executado novamente.
 
-***
+---
 
 <div align="center">
 
-[![Voltar ao topo](https://img.shields.io/badge/⬆️_Voltar_ao_topo-1A73E8?style=for-the-badge)](#-deploy-de-angular-no-firebase-hosting
+[![Voltar ao topo](https://img.shields.io/badge/⬆️_Voltar_ao_topo-1A73E8?style=for-the-badge)](#-deploy-de-angular-no-firebase-hosting)
+
 </div>
