@@ -1020,7 +1020,7 @@ Antes do primeiro deploy:
 
 [![Angular](https://img.shields.io/badge/Angular-1976D2?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/)
 
-[![Compatibilidade de Versões do Angular](https://img.shields.io/badge/Compatibilidade%20de%20Versões%20do%20Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/reference/versions)
+[![Compatibilidade de Versões do Angular](https://img.shields.io/badge/Compatibilidade%20de%20Versões%20do%20Angular-1565C0?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/reference/versions)
 
 [![Angular CLI](https://img.shields.io/badge/Angular-CLI-1565C0?style=for-the-badge&logo=angular&logoColor=white&labelColor=1976D2)](https://angular.dev/tools/cli)
 
